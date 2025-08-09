@@ -1,51 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*cor do papel de parede da pagina */
-        body {
-            background-color: black;
-        }
-        /*cor do titulo*/
-     #titulos {
-  color: rgb(173, 173, 196);
-  font-family: Verdana, sans-serif;
-  font-size: 200%;
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #000000; /* cor base enquanto a imagem carrega */
+}
+
+/*imagem de fundo, escurecida para melhor contraste */
+body::before{
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(imagens/wallace-henry-AJZ_75RTpL0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.9); /* escurece para destacar o texto */
+  z-index: -1; /* fica atrás do conteúdo */
+}
+
+.content {
+  position: relative;
+  padding: 2px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cabeçalho{
+  background: transparent;
   text-align: center;
-  overflow: visible;        
-  white-space: normal;      
-  word-wrap: break-word;    
+  padding: 40px;
+  color: white;
 }
 /*Cor do subtitulo*/
 #subtitulo {
-    color: aqua;
+    color: rgb(243, 247, 247);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    text-align: unset;
+    font-size: 100%;
+    text-align: left;
     overflow: inherit;
     white-space: normal;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+ /*ajuste para as imagens , usado modelo de seletor de classe*/
+.conimagem {
+  display: flex;
+  gap: 20px; /* espaço entre as imagens */
+  justify-content: center; /* centralizar horizontalmente */
+  align-items: center;
+  margin: 20px auto;
+  width: fit-content;
 }
 
-            /*cor do paragrafo*/
-            p {
-              color: rgb(29, 184, 49);
-              font-family: courier;
-              font-size: 160%;
-            }
-            /*ajuste para as imagens , usado modelo de seletor de classe*/
-            .imagem {
-      display: flex;
-      width: 250px;
-      height: auto;
-      gap: 265px;
-      margin-right: 20px;
-    }
+.conimagem span {
+  width: 500px;  /* largura da imagem */
+  height: 250px; /* altura da imagem */
+  display: block;
+}
 
-    .imagem img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.conimagem img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
     /*edição do forms, ajuste do input*/  
     form {
-      margin-top: 2px;
+      margin: top 10px;;
     }
 
     input[type="text"] {
@@ -59,7 +92,7 @@
       width: 65%;
       border-collapse: collapse;
       margin-top: 10px;
-      background-color: #f3e6e6;
+      background-color: #4d2727;
     }
 
     th, td {
@@ -76,7 +109,81 @@
     caption {
       caption-side: top;
       font-size: 24px;
-      color: #00ff88;
+      color: #e2dd91;
       margin-bottom: 10px;
     }
+    /*AJuste da logo da empresa*/
+.logo-circular {
+  width: 200px;   
+  height: 180px;         
+  border-radius: 50%;     
+  object-fit: cover;      
+  border: 2px solid #dad8d8; 
+  display: inline-block;
+  justify-content: center;   
+  align-items: center;      
+}
+/*animação de botão*/
+   .button {
+    position: relative;
+    padding: 10px 20px;
+    background: #111;
+    color: #03e9f4;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  .button .line {
+    position: absolute;
+    bottom: 0;
+    right: -100%; 
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes animate3 {
+    0% {
+      right: -100%;
+    }
+    50%, 100% {
+      right: 100%;
+    }
+  }
+.efeito-borda {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+}
+
+/* linhas */
+.efeito-borda .line {
+  position: absolute;
+  background: linear-gradient(570deg, transparent, #03e9f4);
+}
+
+/* Base */
+.efeito-borda .bottom {
+  bottom: 0;
+  right: -100%;
+  width: 10%;
+  height: 2px;
+  animation: animBottom 10s linear infinite;
+  animation-delay: 1s;
+}
+/* animações */
+@keyframes animBottom {
+  0% { right: -10%; }
+  100% { right: 100%; }
+}
+
+
+
+
+    
    

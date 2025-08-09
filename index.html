@@ -7,13 +7,26 @@
    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h3 id="titulos">Klaus Óculos</h3>
-        <h1 id="subtitulo">MAIS QUE ÓCULOS, SEU NOVO ESTILO. &#128526;</h1>
+      <img src="imagens/logo.png" alt="logo da empresa" class="logo-circular">
+      
+<header class="cabeçalho">
+<h5 class="efeito-borda">
+  MAIS QUE ÓCULOS, SEU NOVO ESTILO. 😎
+  <span class="line bottom"></span>
+</h5>
+<p id="subtitulo">
+    Na Klaus Óculos, trabalhamos diariamente para oferecer a você o melhor em qualidade, inovação e design exclusivo. Nosso compromisso é proporcionar conforto e segurança para a sua visão, com modelos que acompanham as últimas tendências e tecnologia de ponta. Aqui, você encontra atendimento personalizado, variedade de estilos para todos os gostos e o cuidado que seu olhar merece. Enxergue o mundo com clareza, estilo e confiança — essa é a missão da Klaus Óculos.
+  </p>
+</header>
+
+      
 <!--Declarado uma div pois as imagens ficaria todas juntas-->
-        <div class="imagem" >
-        <img src="imagens/oculos 1.jpg" alt="Oculos virtual">
-        <img src="imagens/oculos 2.jpg" alt="Oculos virtuais"> 
-        <img src="imagens/oculos 3.jpg" alt="Por do sol">
+     <div class="conimagem">
+  <img src="imagens/oculos 3.png" alt=""></img>
+   <img src="imagens/oculos 2.png" alt=""></img>
+  <img src="imagens/oculos 1.png" alt=""></img>
+</div>
+
 </div>
 <!--Ajuste da tabela de preços ou catalogo dos produtos-->
 <table>
@@ -47,12 +60,15 @@
       </tr>
     </tbody>
   </table>
-  <!--------Preenchimento do forms , escolha do modelo-->
+  <!--------Formulario para modelo e email-->
 <form action="Selecione a opção">
-    <label for="fname"> Digitar o modelo:></label><br>
+  <h2 id="subtitulo">Escolha seu modelo</h2>
+    <label for="fname"></label><br>
     <input type="text" placeholder="Digite seu modelo" id="fname" name="fname"><br>
-    <label for="email">Digitar o email</label><br>
-    <input type="text" placeholder="Digite seu email" id="email" name="email"></br>
+    <label for="email"></label><br>
+    <input  type="text" placeholder="Digite seu email" id="email" name="email"></br>
 </form>
+<button type="submit" class="button">Enviar
+<span class="line"></span> </button>
     </body>
 </html>
