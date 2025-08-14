@@ -37,10 +37,14 @@ body::before{
   margin: 0 auto;
 }
 .cabeçalho{
-  background: transparent;
+  background:#592161;
   text-align: center;
-  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   color: white;
+  border-style:double;
+  border-width: 5px;
+  border-color: #312c10;
 }
 /*Cor do subtitulo*/
 #subtitulo {
@@ -78,26 +82,27 @@ body::before{
 
     /*edição do forms, ajuste do input*/  
     form {
-      margin: top 10px;;
+      margin: top 20px;;
     }
 
     input[type="text"] {
-        color: #1a1818;
+      color: #1a1818;
       width: 350px;
       height: 25px;
       font-size: 20px;
+      margin-bottom: 0px;
     }
     /*ajuste da tabela dos produtos */
       table {
       width: 65%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin-top: 0px;
       background-color: #4d2727;
     }
 
     th, td {
-      border: 3px solid #444;
-      padding: 5px;
+      border: 5px solid #444;
+      padding: 6px;
       text-align: center;
     }
 
@@ -110,7 +115,7 @@ body::before{
       caption-side: top;
       font-size: 24px;
       color: #e2dd91;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     /*AJuste da logo da empresa*/
 .logo-circular {
@@ -164,26 +169,22 @@ body::before{
 /* linhas */
 .efeito-borda .line {
   position: absolute;
-  background: linear-gradient(570deg, transparent, #03e9f4);
+  background: linear-gradient(570deg, transparent, #024df0);
 }
 
 /* Base */
 .efeito-borda .bottom {
   bottom: 0;
   right: -100%;
-  width: 10%;
-  height: 2px;
-  animation: animBottom 10s linear infinite;
-  animation-delay: 1s;
+  width: 900%;
+  height: 10px;
+  animation: animBottom 1s linear infinite;
+  animation-delay: 3s;
 }
 /* animações */
 @keyframes animBottom {
-  0% { right: -10%; }
-  100% { right: 100%; }
+  0% { right: -800%; }
+  100% { right: 500%; }
 }
 
-
-
-
-    
-   
+ 
