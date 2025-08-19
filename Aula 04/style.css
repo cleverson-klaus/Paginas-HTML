@@ -1,6 +1,6 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 5px; /*os 5px é padrão universal*/
   box-sizing: border-box;
 }
 /*cor do papel de parede da pagina */
@@ -175,16 +175,25 @@ body::before{
 /* Base */
 .efeito-borda .bottom {
   bottom: 0;
-  right: -100%;
-  width: 900%;
-  height: 10px;
-  animation: animBottom 1s linear infinite;
+  right: -80%;
+  width: 1000%;
+  height: 10%;
+  animation: animBottom 40s linear infinite;
   animation-delay: 3s;
 }
 /* animações */
 @keyframes animBottom {
-  0% { right: -800%; }
-  100% { right: 500%; }
+  0% { right: -1000%; }
+  200% { right: 700%; }
 }
-
+/*Aula do dia 13/08, colocando em prática Box Model*/
+.menu{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  color: #3c06d1;
+  margin: 10px;
+  border: 3px;
+  padding: 10px;
+  content: normal;
+}
  

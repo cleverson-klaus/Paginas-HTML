@@ -1,0 +1,210 @@
+/* ===================== RESET GLOBAL ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===================== BODY ===================== */
+body {
+  position: relative;
+  min-height: 100vh;
+  color: #ECECEC;       /* cor principal do texto */
+  overflow-x: hidden;
+  background-color: #01241A; /* fundo sólido principal */
+}
+
+/* ===================== CONTEÚDO PRINCIPAL ===================== */
+.content {
+  position: relative;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===================== CABEÇALHO ===================== */
+.cabecalho {
+  background: #003D34; /* verde profundo */
+  text-align: center;
+  font-size: 25px;
+  color: #ECECEC;
+  border: 5px double #93833E; /* detalhes dourados */
+  padding: 20px;
+}
+
+/* Subtítulo */
+#descricao {
+  color: #ECECEC;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* ===================== GALERIA DE IMAGENS ===================== */
+.conimagem {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.conimagem img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #93833E; /* detalhe dourado */
+}
+
+/* ===================== FORMULÁRIO ===================== */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 350px;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #93833E;
+  border-radius: 5px;
+  color: #01241A;
+}
+
+/* Botão */
+.button {
+  position: relative;
+  padding: 10px 20px;
+  background: #003D34;
+  color: #ECECEC;
+  border: 2px solid #93833E;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.button:hover {
+  background: #93833E;
+  color: #01241A;
+}
+
+/* Linha animada do botão */
+.button .line {
+  position: absolute;
+  bottom: 0;
+  right: -100%; 
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #93833E);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% { right: -100%; }
+  50%, 100% { right: 100%; }
+}
+
+/* ===================== TABELA DE PRODUTOS ===================== */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #003D34;
+  color: #ECECEC;
+}
+
+th, td {
+  border: 2px solid #93833E;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #01241A;
+  color: #ECECEC;
+}
+
+caption {
+  caption-side: top;
+  font-size: 24px;
+  color: #93833E;
+  margin-bottom: 10px;
+}
+
+/* ===================== LOGO ===================== */
+.logo-circular {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #93833E;
+}
+
+/* ===================== MENU ===================== */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background: #003D34;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li a,
+.menu li button {
+  color: #ECECEC;
+  text-decoration: none;
+  background: #01241A;
+  border: 2px solid #93833E;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu li a:hover,
+.menu li button:hover {
+  background: #93833E;
+  color: #01241A;
+}
+
+/* ===================== EFEITO DE BORDA CABEÇALHO ===================== */
+.efeito-borda {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ECECEC;
+}
+
+.efeito-borda .line {
+  position: absolute;
+  background: linear-gradient(570deg, transparent, #93833E);
+}
+
+.efeito-borda .bottom {
+  bottom: 0;
+  right: -80%;
+  width: 1000%;
+  height: 10%;
+  animation: animBottom 40s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes animBottom {
+  0% { right: -1000%; }
+  200% { right: 700%; }
+}

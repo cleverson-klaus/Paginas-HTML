@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja Virtual - Klaus Óculos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER PRINCIPAL ===================== -->
+<header class="topo">
+    <!-- Logo da empresa -->
+    <img src="imagens/logo.png" alt="Logo da Klaus Óculos" class="logo-circular">
+
+    <!-- Menu de navegação -->
+    <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#conosco">Conosco</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><button id="btn-pesquisa" class="button">🔍 Pesquisar</button></li>
+    </ul>
+</header>
+
+<!-- ===================== CABEÇALHO PRINCIPAL ===================== -->
+<header class="cabecalho">
+    <h5 class="efeito-borda">
+        MAIS QUE ÓCULOS, SEU NOVO ESTILO. 😎
+        <span class="line bottom"></span>
+    </h5>
+    <p id="descricao">
+        Na Klaus Óculos, trabalhamos diariamente para oferecer a você o melhor em qualidade, inovação e design exclusivo.
+        Nosso compromisso é proporcionar conforto e segurança para a sua visão, com modelos que acompanham as últimas tendências e tecnologia de ponta.
+        Aqui, você encontra atendimento personalizado, variedade de estilos para todos os gostos e o cuidado que seu olhar merece.
+        Enxergue o mundo com clareza, estilo e confiança — essa é a missão da Klaus Óculos.
+    </p>
+</header>
+
+<!-- ===================== GALERIA DE IMAGENS ===================== -->
+<section class="conimagem">
+    <h2>Confira nossos modelos</h2>
+    <img src="imagens/oculos3.png" alt="Óculos Modelo 3">
+    <img src="imagens/oculos2.png" alt="Óculos Modelo 2">
+    <img src="imagens/oculos1.png" alt="Óculos Modelo 1">
+</section>
+
+<!-- ===================== TABELA DE PRODUTOS ===================== -->
+<section class="produtos">
+    <h2>Modelos de Óculos Disponíveis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Tipo</th>
+                <th>Cor</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Modelo A</td>
+                <td>Esportivo</td>
+                <td>Preto</td>
+                <td>R$ 199,90</td>
+            </tr>
+            <tr>
+                <td>Modelo B</td>
+                <td>Clássico</td>
+                <td>Azul</td>
+                <td>R$ 149,90</td>
+            </tr>
+            <tr>
+                <td>Modelo C</td>
+                <td>Retrô</td>
+                <td>Marrom</td>
+                <td>R$ 179,90</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- ===================== FORMULÁRIO DE ESCOLHA ===================== -->
+<section class="escolha-modelo">
+    <h2>Escolha seu modelo</h2>
+    <form action="enviar.php" method="post">
+        <label for="modelo">Modelo:</label><br>
+        <input type="text" placeholder="Digite seu modelo" id="modelo" name="modelo" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" placeholder="Digite seu email" id="email" name="email" required><br>
+
+        <button type="submit" class="button">Enviar
+            <span class="line"></span>
+        </button>
+    </form>
+</section>
+
+<!-- ===================== SEÇÃO DE PROMOÇÕES ===================== -->
+<section class="promocoes">
+    <h2>Promoções da Semana</h2>
+    <div class="card-produto">
+        <img src="imagens/oculos4.png" alt="Óculos Modelo D">
+        <h3>Modelo D</h3>
+        <p>R$ 129,90</p>
+    </div>
+    <div class="card-produto">
+        <img src="imagens/oculos5.png" alt="Óculos Modelo E">
+        <h3>Modelo E</h3>
+        <p>R$ 159,90</p>
+    </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS ===================== -->
+<section class="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimento">
+        <p>“Amei meu óculos novo! Qualidade excelente e entrega rápida.”</p>
+        <span>- João S.</span>
+    </div>
+    <div class="depoimento">
+        <p>“Design incrível! Me sinto estilosa usando os modelos da Klaus Óculos.”</p>
+        <span>- Maria L.</span>
+    </div>
+</section>
+
+<!-- ===================== REDES SOCIAIS ===================== -->
+<section class="redes-sociais">
+    <h2>Nos siga nas redes</h2>
+    <a hre
